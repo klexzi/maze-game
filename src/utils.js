@@ -52,7 +52,6 @@ const selectFruitCell = (cells, width, height) => {
   let totalFruits = Math.ceil((width * height) / width);
   let count = 0;
   while (count <= totalFruits) {
-    console.log(count);
     let xRandom = parseInt(Math.random() * width);
     let yRandom = parseInt(Math.random() * height);
     cells.forEach((val, i, cells) => {

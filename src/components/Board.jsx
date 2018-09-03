@@ -92,9 +92,6 @@ class Board extends Component {
   componentDidMount() {
     window.onkeydown = this.handlePlayerMove;
   }
-  componentDidUpdate(prevprops, nextprops) {
-    console.log(nextprops);
-  }
 
   render() {
     const cell = this.state.board;
@@ -131,6 +128,7 @@ class Board extends Component {
           >
             Restart Game
           </button>
+          <button onClick={this.props.restartGame}> New Game </button>
         </div>
       </div>
     );
